@@ -1,0 +1,82 @@
+[2026-05-02 02:27:22 DEBUG Log:28] Load map template th脿nh c么ng (166)
+[2026-05-02 02:27:22 DEBUG Log:28] Load skill th脿nh c么ng (3)
+[2026-05-02 02:27:22 DEBUG Log:28] Load head avatar th脿nh c么ng (489)
+[2026-05-02 02:27:22 DEBUG Log:28] Load flag bag th脿nh c么ng (165)
+[2026-05-02 02:27:22 DEBUG Log:28] Load c岷 trang th脿nh c么ng (465)
+[2026-05-02 02:27:22 DEBUG Log:28] Load intrinsic th脿nh c么ng (27)
+[2026-05-02 02:27:22 DEBUG Log:28] Load task th脿nh c么ng (34)
+[2026-05-02 02:27:22 DEBUG Log:28] Load side task th脿nh c么ng (59)
+[2026-05-02 02:27:22 DEBUG Log:28] Load map item template th脿nh c么ng (2100)
+[2026-05-02 02:27:22 DEBUG Log:28] Load map item option template th脿nh c么ng (248)
+[2026-05-02 02:27:23 DEBUG Log:28] Load shop th脿nh c么ng (38)
+[2026-05-02 02:27:23 DEBUG Log:28] Load reward lucky round th脿nh c么ng! 31.949999999999996
+[2026-05-02 02:27:23 DEBUG Log:28] Load reward lucky round th脿nh c么ng (83)
+[2026-05-02 02:27:23 DEBUG Log:28] Load mob template th脿nh c么ng (107)
+[2026-05-02 02:27:23 DEBUG Log:28] Load npc template th脿nh c么ng (102)
+[2026-05-02 02:27:23 DEBUG Log:28] Init map th脿nh c么ng!
+[2026-05-02 02:27:23 DEBUG Log:28] Load clan th脿nh c么ng (0), clan next id: 0
+[2026-05-02 02:27:23 DEBUG Log:28] Load bảng tin thành công (1)
+[2026-05-02 02:27:23 DEBUG Log:28] Load phuc_loi thành công (5)
+[2026-05-02 02:27:23 DEBUG Log:28] Load PHUCLOI_TEMPLATES thành công (31)
+[2026-05-02 02:27:23 DEBUG Log:28] Load tambao_items: rows=9, pools=1
+[2026-05-02 02:27:23 DEBUG Log:28] Load Mốc Tầm Bảo thành công (12)
+[2026-05-02 02:27:23 DEBUG Log:28] Load Kham Ngoc thành công (7)
+[2026-05-02 02:27:23 DEBUG Log:28] Load Ruong Suu Tam thành công (19)
+[2026-05-02 02:27:23 DEBUG Log:28] Load Phong Thi Nghiem thanh cong (4)
+[2026-05-02 02:27:23 DEBUG Log:20] T峄昻g th峄漣 gian load database: 1198(ms)
+[2026-05-02 02:27:25 DEBUG Log:20] Start server......... Current thread: 189
+[2026-05-02 02:33:09 DEBUG Log:28] Load map template th脿nh c么ng (166)
+[2026-05-02 02:33:09 DEBUG Log:28] Load skill th脿nh c么ng (3)
+[2026-05-02 02:33:09 DEBUG Log:28] Load head avatar th脿nh c么ng (489)
+[2026-05-02 02:33:09 DEBUG Log:28] Load flag bag th脿nh c么ng (165)
+[2026-05-02 02:33:09 DEBUG Log:28] Load c岷 trang th脿nh c么ng (465)
+[2026-05-02 02:33:09 DEBUG Log:28] Load intrinsic th脿nh c么ng (27)
+[2026-05-02 02:33:09 DEBUG Log:28] Load task th脿nh c么ng (34)
+[2026-05-02 02:33:09 DEBUG Log:28] Load side task th脿nh c么ng (59)
+[2026-05-02 02:33:09 DEBUG Log:28] Load map item template th脿nh c么ng (2100)
+[2026-05-02 02:33:09 DEBUG Log:28] Load map item option template th脿nh c么ng (248)
+[2026-05-02 02:33:09 DEBUG Log:28] Load shop th脿nh c么ng (38)
+[2026-05-02 02:33:09 DEBUG Log:28] Load reward lucky round th脿nh c么ng! 31.949999999999996
+[2026-05-02 02:33:09 DEBUG Log:28] Load reward lucky round th脿nh c么ng (83)
+[2026-05-02 02:33:09 DEBUG Log:28] Load mob template th脿nh c么ng (107)
+[2026-05-02 02:33:09 DEBUG Log:28] Load npc template th脿nh c么ng (102)
+[2026-05-02 02:33:10 DEBUG Log:28] Init map th脿nh c么ng!
+[2026-05-02 02:33:10 DEBUG Log:28] Load clan th脿nh c么ng (0), clan next id: 0
+[2026-05-02 02:33:10 DEBUG Log:28] Load bảng tin thành công (1)
+[2026-05-02 02:33:10 DEBUG Log:28] Load phuc_loi thành công (5)
+[2026-05-02 02:33:10 DEBUG Log:28] Load PHUCLOI_TEMPLATES thành công (31)
+[2026-05-02 02:33:10 DEBUG Log:28] Load tambao_items: rows=9, pools=1
+[2026-05-02 02:33:10 DEBUG Log:28] Load Mốc Tầm Bảo thành công (12)
+[2026-05-02 02:33:10 DEBUG Log:28] Load Kham Ngoc thành công (7)
+[2026-05-02 02:33:10 DEBUG Log:28] Load Ruong Suu Tam thành công (19)
+[2026-05-02 02:33:10 DEBUG Log:28] Load Phong Thi Nghiem thanh cong (4)
+[2026-05-02 02:33:10 DEBUG Log:20] T峄昻g th峄漣 gian load database: 982(ms)
+[2026-05-02 02:33:11 DEBUG Log:20] Start server......... Current thread: 188
+[2026-05-02 02:39:55 DEBUG Log:28] Load map template th脿nh c么ng (166)
+[2026-05-02 02:39:55 DEBUG Log:28] Load skill th脿nh c么ng (3)
+[2026-05-02 02:39:55 DEBUG Log:28] Load head avatar th脿nh c么ng (489)
+[2026-05-02 02:39:55 DEBUG Log:28] Load flag bag th脿nh c么ng (165)
+[2026-05-02 02:39:55 DEBUG Log:28] Load c岷 trang th脿nh c么ng (465)
+[2026-05-02 02:39:55 DEBUG Log:28] Load intrinsic th脿nh c么ng (27)
+[2026-05-02 02:39:55 DEBUG Log:28] Load task th脿nh c么ng (34)
+[2026-05-02 02:39:55 DEBUG Log:28] Load side task th脿nh c么ng (59)
+[2026-05-02 02:39:55 DEBUG Log:28] Load map item template th脿nh c么ng (2100)
+[2026-05-02 02:39:55 DEBUG Log:28] Load map item option template th脿nh c么ng (248)
+[2026-05-02 02:39:55 DEBUG Log:28] Load shop th脿nh c么ng (38)
+[2026-05-02 02:39:55 DEBUG Log:28] Load reward lucky round th脿nh c么ng! 31.949999999999996
+[2026-05-02 02:39:55 DEBUG Log:28] Load reward lucky round th脿nh c么ng (83)
+[2026-05-02 02:39:55 DEBUG Log:28] Load mob template th脿nh c么ng (107)
+[2026-05-02 02:39:55 DEBUG Log:28] Load npc template th脿nh c么ng (102)
+[2026-05-02 02:39:55 DEBUG Log:28] Init map th脿nh c么ng!
+[2026-05-02 02:39:55 DEBUG Log:28] Load clan th脿nh c么ng (0), clan next id: 0
+[2026-05-02 02:39:55 DEBUG Log:28] Load bảng tin thành công (1)
+[2026-05-02 02:39:55 DEBUG Log:28] Load phuc_loi thành công (5)
+[2026-05-02 02:39:55 DEBUG Log:28] Load PHUCLOI_TEMPLATES thành công (31)
+[2026-05-02 02:39:55 DEBUG Log:28] Load tambao_items: rows=9, pools=1
+[2026-05-02 02:39:55 DEBUG Log:28] Load Mốc Tầm Bảo thành công (12)
+[2026-05-02 02:39:55 DEBUG Log:28] Load Kham Ngoc thành công (7)
+[2026-05-02 02:39:55 DEBUG Log:28] Load Ruong Suu Tam thành công (19)
+[2026-05-02 02:39:55 DEBUG Log:28] Load Phong Thi Nghiem thanh cong (4)
+[2026-05-02 02:39:55 DEBUG Log:20] T峄昻g th峄漣 gian load database: 957(ms)
+[2026-05-02 02:39:57 DEBUG Log:20] Start server......... Current thread: 188
+[2026-05-02 03:21:50 DEBUG Log:20] BEGIN KICK OUT SESSION...............................
