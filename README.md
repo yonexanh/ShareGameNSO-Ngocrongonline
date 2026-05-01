@@ -1,29 +1,29 @@
 # ShareGameNSO-Ngocrongonline
 
-Huong dan cai dat va chay source game Ngoc Rong Online tu dau.
+Hướng dẫn cài đặt và chạy source game Ngọc Rồng Online từ đầu.
 
-## Cau truc thu muc
+## Cấu Trúc Thư Mục
 
 ```text
 SRC5M/
-|-- Local5m/              # Client Windows da build san
+|-- Local5m/              # Client Windows đã build sẵn
 `-- Source5m/             # Source server Java/Maven
     |-- Sql/              # File database
-    |-- config/           # Cau hinh game server
-    |-- login/            # Login server da build san
+    |-- config/           # Cấu hình game server
+    |-- login/            # Login server đã build sẵn
     |-- src/              # Source Java game server
-    `-- target/           # File jar build san / file build ra tu Maven
+    `-- target/           # File jar build sẵn / file build ra từ Maven
 ```
 
-## Yeu cau
+## Yêu Cầu
 
-- Git va Git LFS.
+- Git và Git LFS.
 - Java JDK 17.
 - Maven 3.8+.
-- MySQL hoac MariaDB.
-- Windows neu muon chay client `SRC5M/Local5m/ModLocal_Double.exe`.
+- MySQL hoặc MariaDB.
+- Windows nếu muốn chạy client `SRC5M/Local5m/ModLocal_Double.exe`.
 
-Kiem tra nhanh:
+Kiểm tra nhanh:
 
 ```bash
 git --version
@@ -33,7 +33,7 @@ mvn -version
 mysql --version
 ```
 
-## 1. Tai source
+## 1. Tải Source
 
 ```bash
 git clone https://github.com/yonexanh/ShareGameNSO-Ngocrongonline.git
@@ -42,28 +42,28 @@ git lfs install
 git lfs pull
 ```
 
-`git lfs pull` la bat buoc vi client co file tai nguyen lon duoc quan ly bang Git LFS.
+`git lfs pull` là bắt buộc vì client có file tài nguyên lớn được quản lý bằng Git LFS.
 
-## 2. Tao database
+## 2. Tạo Database
 
-Tao database `hashirama` va import file SQL co san:
+Tạo database `hashirama` và import file SQL có sẵn:
 
 ```bash
 mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS hashirama CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
 mysql -u root -p hashirama < SRC5M/Source5m/Sql/hashirama.sql
 ```
 
-Neu MySQL cua ban dung user/password khac, hay sua lai o buoc cau hinh ben duoi.
+Nếu MySQL của bạn dùng user/password khác, hãy sửa lại ở bước cấu hình bên dưới.
 
-## 3. Cau hinh game server
+## 3. Cấu Hình Game Server
 
-Mo file:
+Mở file:
 
 ```text
 SRC5M/Source5m/config/server.properties
 ```
 
-Kiem tra cac dong chinh:
+Kiểm tra các dòng chính:
 
 ```properties
 server.db.ip=localhost
@@ -79,21 +79,21 @@ login.host=127.0.0.1
 login.port=8888
 ```
 
-Ghi chu:
+Ghi chú:
 
-- Neu chay server tren may khac, doi `127.0.0.1` trong `server.sv1` thanh IP/domain ma client co the ket noi.
-- Neu file chua co `login.host` va `login.port`, game server se mac dinh ket noi login server tai `127.0.0.1:8888`.
-- Nen doi `api.key` truoc khi public/chay that.
+- Nếu chạy server trên máy khác, đổi `127.0.0.1` trong `server.sv1` thành IP/domain mà client có thể kết nối.
+- Nếu file chưa có `login.host` và `login.port`, game server sẽ mặc định kết nối login server tại `127.0.0.1:8888`.
+- Nên đổi `api.key` trước khi public/chạy thật.
 
-## 4. Cau hinh login server
+## 4. Cấu Hình Login Server
 
-Mo file:
+Mở file:
 
 ```text
 SRC5M/Source5m/login/server.ini
 ```
 
-Kiem tra cau hinh database va port:
+Kiểm tra cấu hình database và port:
 
 ```ini
 server.port=8888
@@ -106,26 +106,26 @@ db.driver=com.mysql.cj.jdbc.Driver
 admin.mode=0
 ```
 
-Thong tin database trong `server.ini` nen khop voi `config/server.properties`.
+Thông tin database trong `server.ini` nên khớp với `config/server.properties`.
 
-## 5. Build game server
+## 5. Build Game Server
 
-Chay trong thu muc `SRC5M/Source5m`:
+Chạy trong thư mục `SRC5M/Source5m`:
 
 ```bash
 cd SRC5M/Source5m
 mvn clean package
 ```
 
-Sau khi build thanh cong, file jar se nam o:
+Sau khi build thành công, file jar sẽ nằm ở:
 
 ```text
 target/VIP-1.0-RELEASE-jar-with-dependencies.jar
 ```
 
-## 6. Chay server
+## 6. Chạy Server
 
-Can chay login server truoc, sau do moi chay game server.
+Cần chạy login server trước, sau đó mới chạy game server.
 
 Terminal 1 - login server:
 
@@ -141,96 +141,96 @@ cd SRC5M/Source5m
 java -jar target/VIP-1.0-RELEASE-jar-with-dependencies.jar
 ```
 
-Mac/Linux co the can mo port tren firewall:
+Mac/Linux có thể cần mở port trên firewall:
 
 - `8888`: login server.
 - `14445`: game server.
-- `8080`: API neu dang dung.
+- `8080`: API nếu đang dùng.
 
-## 7. Chay client Windows
+## 7. Chạy Client Windows
 
-Client nam trong:
+Client nằm trong:
 
 ```text
 SRC5M/Local5m
 ```
 
-Neu server va client cung mot may Windows:
+Nếu server và client cùng một máy Windows:
 
-1. Mo `SRC5M/Local5m/RUN_GAME.bat`, hoac chay truc tiep `ModLocal_Double.exe`.
+1. Mở `SRC5M/Local5m/RUN_GAME.bat`, hoặc chạy trực tiếp `ModLocal_Double.exe`.
 
-Neu server chay tren may khac:
+Nếu server chạy trên máy khác:
 
-1. Mo `SRC5M/Local5m/SETUP_PORTPROXY_ADMIN.bat`.
-2. Sua dong `MAC_SERVER_IP` thanh IP may dang chay server.
-3. Bam chuot phai file `.bat` va chon `Run as administrator`.
-4. Chay `RUN_GAME.bat` hoac `ModLocal_Double.exe`.
+1. Mở `SRC5M/Local5m/SETUP_PORTPROXY_ADMIN.bat`.
+2. Sửa dòng `MAC_SERVER_IP` thành IP máy đang chạy server.
+3. Bấm chuột phải file `.bat` và chọn `Run as administrator`.
+4. Chạy `RUN_GAME.bat` hoặc `ModLocal_Double.exe`.
 
-Tai khoan test trong database:
+Tài khoản test trong database:
 
 ```text
 admin1
 admin123123123
 ```
 
-## Lenh thuong dung
+## Lệnh Thường Dùng
 
-Build lai server:
+Build lại server:
 
 ```bash
 cd SRC5M/Source5m
 mvn clean package
 ```
 
-Chay login server:
+Chạy login server:
 
 ```bash
 cd SRC5M/Source5m/login
 java -jar ServerLogin.jar
 ```
 
-Chay game server:
+Chạy game server:
 
 ```bash
 cd SRC5M/Source5m
 java -jar target/VIP-1.0-RELEASE-jar-with-dependencies.jar
 ```
 
-Cap nhat source moi nhat:
+Cập nhật source mới nhất:
 
 ```bash
 git pull
 git lfs pull
 ```
 
-## Loi thuong gap
+## Lỗi Thường Gặp
 
-### Client khong vao duoc server
+### Client không vào được server
 
-- Kiem tra login server da chay port `8888`.
-- Kiem tra game server da chay port `14445`.
-- Kiem tra `server.sv1` trong `config/server.properties` dung IP/domain cua server.
-- Neu dung Windows portproxy, chay `SETUP_PORTPROXY_ADMIN.bat` bang quyen Administrator.
+- Kiểm tra login server đã chạy port `8888`.
+- Kiểm tra game server đã chạy port `14445`.
+- Kiểm tra `server.sv1` trong `config/server.properties` đúng IP/domain của server.
+- Nếu dùng Windows portproxy, chạy `SETUP_PORTPROXY_ADMIN.bat` bằng quyền Administrator.
 
-### Game server bao loi ket noi database
+### Game server báo lỗi kết nối database
 
-- Kiem tra MySQL/MariaDB dang chay.
-- Kiem tra database `hashirama` da import thanh cong.
-- Kiem tra user/password trong `config/server.properties` va `login/server.ini`.
+- Kiểm tra MySQL/MariaDB đang chạy.
+- Kiểm tra database `hashirama` đã import thành công.
+- Kiểm tra user/password trong `config/server.properties` và `login/server.ini`.
 
-### Thieu file client hoac file tai nguyen bi loi
+### Thiếu file client hoặc file tài nguyên bị lỗi
 
-Chay lai:
+Chạy lại:
 
 ```bash
 git lfs pull
 ```
 
-### Port da bi su dung
+### Port đã bị sử dụng
 
-Doi port trong:
+Đổi port trong:
 
 - `SRC5M/Source5m/config/server.properties`
 - `SRC5M/Source5m/login/server.ini`
 
-Sau do restart login server va game server.
+Sau đó restart login server và game server.
